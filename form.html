@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="atom.css">
+    <script src="form.js"></script>
+    <link rel="stylesheet" href="path/to/bootstrap.min.css">
+<script src="path/to/bootstrap.min.js"></script>
+
+<body onload="btn-click()">
+  
+    <div class="form-visit" id="visit">
+        <div class="formbold-main-wrapper">
+            <!-- Author: FormBold Team -->
+            <!-- Learn More: https://formbold.com -->
+            <div class="formbold-form-wrapper">
+              <div class="atom-div">
+                <main>
+                  <div class="atom">
+                      <div class="electron"></div>
+                      <div class="electron-alpha"></div>
+                      <div class="electron-omega"></div>
+                  </div>
+                </main>
+              </div>
+          
+              <form action="https://formbold.com/s/FORM_ID" method="POST">
+                <div class="formbold-form-title">
+                  <h2 class="">Jelentkezz most!</h2>
+                  <p>
+                    Vegyél részt te is a 13. fizika konferecián!
+                  </p>
+                </div>
+                <!-- SWITCH VENDEG ELOADO -->
+                <div class="form-switch">
+                  <div class="switch-btn">
+                    <a href="#" id="e-btn">Előadó</a>
+                  </div>
+                  <div class="switch-btn">
+                    <a href="#" id="v-btn">Vendég</a>
+                  </div >
+                </div>
+
+                <!-- GOMB FIGYELO -->
+                <script>
+                  var eBtn = document.getElementById("e-btn");
+                  var vBtn = document.getElementById("v-btn");
+                  var div1 = document.getElementById("pres");
+                  var div2 = document.getElementById("visit");
+
+                  eBtn.addEventListener('click', () => {
+                    div1.style.display = 'block';
+                    div2.style.display = 'none';
+                    eBtn2.style.backgroundColor= '#ffffff99';
+                    eBtn2.style.border = '2px solid #2e7f8e';
+                    
+                    vBtn2.style.border = 'none';
+                    vBtn2.style.backgroundColor = 'none';
+                    
+                  });
+
+                  vBtn.addEventListener('click', () => {
+                    div1.style.display = 'none';
+                    div2.style.display = 'block';
+                    vBtn.style.backgroundColor= '#ffffff99';
+                    vBtn.style.border = '2px solid #2e7f8e';
+                    
+                    eBtn.style.border = 'none';
+                    eBtn.style.backgroundColor = 'none';
+                    
+                  });
+
+                  window.onload=function(){
+                    document.getElementById("v-btn").click();
+                  };
+                  
+              </script>
+                
+
+
+
+
+
+                <div class="formbold-input-flex">
+                  <div>
+                    <label for="firstname" class="formbold-form-label">
+                      Családnév
+                    </label>
+                    <input
+                      type="text"
+                      name="firstname"
+                      id="firstname"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                  <div>
+                    <label for="lastname" class="formbold-form-label"> Keresztnév </label>
+                    <input
+                      type="text"
+                      name="lastname"
+                      id="lastname"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                </div>
+
+                <div class="nem-radio">
+                  <p>Nem</p>
+                    <input type="radio" id="age1" name="age" value="30">
+                    <label for="age1">Férfi</label>
+                    <input type="radio" id="age2" name="age" value="60">
+                    <label for="age2">Nő</label>
+                </div>
+          
+                <div class="formbold-input-flex">
+                  <div>
+                    <label for="email" class="formbold-form-label"> Email </label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                  <div>
+                    <label for="phone" class="formbold-form-label"> Telefonszám </label>
+                    <input
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                </div>
+          
+                
+          
+                <div class="formbold-input-flex">
+                  <div>
+                    <label for="state" class="formbold-form-label"> Ország </label>
+                    <input
+                      type="text"
+                      name="state"
+                      id="state"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                  <div>
+                    <label for="country" class="formbold-form-label"> Megye </label>
+                    <input
+                      type="text"
+                      name="country"
+                      id="country"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                </div>
+
+                <div class="formbold-mb-3">
+                    <label for="address" class="formbold-form-label">
+                      Utcanév
+                    </label>
+                    <input
+                      type="text"
+                      name="address"
+                      id="address"
+                      class="formbold-form-input"
+                    />
+                  </div>
+          
+                <div class="formbold-input-flex">
+                  <div>
+                    <label for="post" class="formbold-form-label"> Irányítószám </label>
+                    <input
+                      type="text"
+                      name="post"
+                      id="post"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                  <div>
+                    <label for="area" class="formbold-form-label"> Házszám </label>
+                    <input
+                      type="text"
+                      name="area"
+                      id="area"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                </div>
+
+                
+
+          
+                <div class="formbold-checkbox-wrapper">
+                  <label for="supportCheckbox" class="formbold-checkbox-label">
+                    <div class="formbold-relative">
+                      <input
+                        type="checkbox"
+                        id="supportCheckbox"
+                        class="formbold-input-checkbox"
+                      />
+                      <div class="formbold-checkbox-inner">
+                        <span class="formbold-opacity-0">
+                          <svg
+                            width="11"
+                            height="8"
+                            viewBox="0 0 11 8"
+                            fill="none"
+                            class="formbold-stroke-current"
+                          >
+                            <path
+                              d="M10.0915 0.951972L10.0867 0.946075L10.0813 0.940568C9.90076 0.753564 9.61034 0.753146 9.42927 0.939309L4.16201 6.22962L1.58507 3.63469C1.40401 3.44841 1.11351 3.44879 0.932892 3.63584C0.755703 3.81933 0.755703 4.10875 0.932892 4.29224L0.932878 4.29225L0.934851 4.29424L3.58046 6.95832C3.73676 7.11955 3.94983 7.2 4.1473 7.2C4.36196 7.2 4.55963 7.11773 4.71406 6.9584L10.0468 1.60234C10.2436 1.4199 10.2421 1.1339 10.0915 0.951972ZM4.2327 6.30081L4.2317 6.2998C4.23206 6.30015 4.23237 6.30049 4.23269 6.30082L4.2327 6.30081Z"
+                              stroke-width="0.4"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                      Elfogadom a <a href="#">felhasználási feltételeket:</a>
+                  
+                  </label>
+                </div>
+                <div class="jel-btn">
+                  <button class="formbold-btn">
+                    <a href="index.html">Jelentkezés</a>
+                  </button>
+                  <button class="formbold-btn-2">
+                    <a href="index.html">Vissza a főoldalra</a>
+                  </button>
+
+                </div>
+              </form>
+            </div>
+          </div>
+
+    </div>
+    
+    <div class="presentator-form" id="pres">
+        <div class="formbold-main-wrapper">
+            <!-- Author: FormBold Team -->
+            <!-- Learn More: https://formbold.com -->
+            <div class="formbold-form-wrapper">
+              <div class="atom-div">
+                <main>
+                  <div class="atom">
+                      <div class="electron"></div>
+                      <div class="electron-alpha"></div>
+                      <div class="electron-omega"></div>
+                  </div>
+                </main>
+              </div>
+          
+              <form action="https://formbold.com/s/FORM_ID" method="POST">
+                <div class="formbold-form-title">
+                  <h2 class="">Jelentkezz most te is előadóként!</h2>
+                  <p>
+                    Vegyél részt te is a 13. fizika konferecián!
+                  </p>
+                </div>
+
+
+
+                <div class="form-switch">
+                  <div class="switch-btn">
+                    <a href="#" id="e-btn-2">Előadó</a>
+                  </div>
+                  <div class="switch-btn">
+                    <a href="#" id="v-btn-2">Vendég</a>
+                  </div >
+                </div>
+
+                <!-- GOMB FIGYELO -->
+                <script>
+                  var eBtn2 = document.getElementById("e-btn-2");
+                  var vBtn2 = document.getElementById("v-btn-2");
+                  var div1 = document.getElementById("pres");
+                  var div2 = document.getElementById("visit");
+
+                  eBtn2.addEventListener('click', () => {
+                    div1.style.display = 'block';
+                    div2.style.display = 'none';
+                    vBtn.style.backgroundColor= '#ffffff99';
+                    vBtn.style.border = 'none';
+                  });
+
+                  vBtn2.addEventListener('click', () => {
+                    div1.style.display = 'none';
+                    div2.style.display = 'block';
+                    vBtn.style.backgroundColor= '#ffffff99';
+                    vBtn.style.border = '2px solid #2e7f8e';
+                    vBtn.style.transition = 'all 0.3s ease';
+                    eBtn.style.border = 'none';
+                    eBtn.style.backgroundColor = 'none';
+                    eBtn.style.transition = 'all 0.3s ease';
+                  });
+                  
+              </script>
+
+
+
+          
+                <div class="formbold-input-flex">
+                  <div>
+                    <label for="firstname" class="formbold-form-label">
+                      Családnév
+                    </label>
+                    <input
+                      type="text"
+                      name="firstname"
+                      id="firstname"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                  <div>
+                    <label for="lastname" class="formbold-form-label"> Keresztnév </label>
+                    <input
+                      type="text"
+                      name="lastname"
+                      id="lastname"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                </div>
+
+                <div class="nem-radio">
+                  <p>Nem</p>
+                    <input type="radio" id="age1" name="age" value="30">
+                    <label for="age1">Férfi</label>
+                    <input type="radio" id="age2" name="age" value="60">
+                    <label for="age2">Nő</label>
+                </div>
+          
+                <div class="formbold-input-flex">
+                  <div>
+                    <label for="email" class="formbold-form-label"> Email </label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                  <div>
+                    <label for="phone" class="formbold-form-label"> Telefonszám </label>
+                    <input
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                </div>
+          
+                
+          
+                <div class="formbold-input-flex">
+                  <div>
+                    <label for="state" class="formbold-form-label"> Ország </label>
+                    <input
+                      type="text"
+                      name="state"
+                      id="state"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                  <div>
+                    <label for="country" class="formbold-form-label"> Megye </label>
+                    <input
+                      type="text"
+                      name="country"
+                      id="country"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                </div>
+
+                <div class="formbold-mb-3">
+                    <label for="address" class="formbold-form-label">
+                      Utcanév
+                    </label>
+                    <input
+                      type="text"
+                      name="address"
+                      id="address"
+                      class="formbold-form-input"
+                    />
+                  </div>
+          
+                <div class="formbold-input-flex">
+                  <div>
+                    <label for="post" class="formbold-form-label"> Irányítószám </label>
+                    <input
+                      type="text"
+                      name="post"
+                      id="post"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                  <div>
+                    <label for="area" class="formbold-form-label"> Házszám </label>
+                    <input
+                      type="text"
+                      name="area"
+                      id="area"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                </div>
+
+                <div class="formbold-mb-3">
+                  <label for="address" class="formbold-form-label">
+                    Intézmény
+                  </label>
+                  <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    class="formbold-form-input"
+                  />
+                </div>
+
+                <div class="custom-select" style="width:200px;">
+                  <select>
+                    <option value="0">Válasszon szakterületet</option>
+                    <option value="1">Klasszikus mechanika</option>
+                    <option value="2">Termodinamika és statisztikus mechanika</option>
+                    <option value="3">Elektromosság és elektronika</option>
+                    <option value="4">Relativisztikus mechanika</option>
+                    <option value="5">Kvantummechanika</option>
+                    <option value="6">Optikai, atomi és molekuláris  fizika</option>
+                    <option value="7">Kondenzált anyagok fizikája</option>
+                    <option value="8">Nagy energiájú részecskefizika és nukleáris fizika</option>
+                    <option value="9">Kozmológia</option>
+                  </select>
+                </div>
+
+          
+                <div class="formbold-checkbox-wrapper">
+                  <label for="supportCheckbox" class="formbold-checkbox-label">
+                    <div class="formbold-relative">
+                      <input
+                        type="checkbox"
+                        id="supportCheckbox"
+                        class="formbold-input-checkbox"
+                      />
+                      <div class="formbold-checkbox-inner">
+                        <span class="formbold-opacity-0">
+                          <svg
+                            width="11"
+                            height="8"
+                            viewBox="0 0 11 8"
+                            fill="none"
+                            class="formbold-stroke-current"
+                          >
+                            <path
+                              d="M10.0915 0.951972L10.0867 0.946075L10.0813 0.940568C9.90076 0.753564 9.61034 0.753146 9.42927 0.939309L4.16201 6.22962L1.58507 3.63469C1.40401 3.44841 1.11351 3.44879 0.932892 3.63584C0.755703 3.81933 0.755703 4.10875 0.932892 4.29224L0.932878 4.29225L0.934851 4.29424L3.58046 6.95832C3.73676 7.11955 3.94983 7.2 4.1473 7.2C4.36196 7.2 4.55963 7.11773 4.71406 6.9584L10.0468 1.60234C10.2436 1.4199 10.2421 1.1339 10.0915 0.951972ZM4.2327 6.30081L4.2317 6.2998C4.23206 6.30015 4.23237 6.30049 4.23269 6.30082L4.2327 6.30081Z"
+                              stroke-width="0.4"
+                            ></path>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                      Elfogadom a <a href="#">felhasználási feltételeket:</a>
+                  
+                  </label>
+                </div>
+                <div class="jel-btn">
+                  <button class="formbold-btn" onclick="location.href='index.html'">
+                    <a href="index.html">Jelentkezés</a>
+                  </button>
+                  <button class="formbold-btn-2" onclick="location.href='index.html'">
+                    <a href="index.html">Vissza a főoldalra</a>
+                  </button>
+
+                </div>
+              </form>
+            </div>
+          </div>
+
+    </div>
+  
+
+    <script>
+      var x, i, j, l, ll, selElmnt, a, b, c;
+      /*look for any elements with the class "custom-select":*/
+      x = document.getElementsByClassName("custom-select");
+      l = x.length;
+      for (i = 0; i < l; i++) {
+        selElmnt = x[i].getElementsByTagName("select")[0];
+        ll = selElmnt.length;
+        /*for each element, create a new DIV that will act as the selected item:*/
+        a = document.createElement("DIV");
+        a.setAttribute("class", "select-selected");
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+        x[i].appendChild(a);
+        /*for each element, create a new DIV that will contain the option list:*/
+        b = document.createElement("DIV");
+        b.setAttribute("class", "select-items select-hide");
+        for (j = 1; j < ll; j++) {
+          /*for each option in the original select element,
+          create a new DIV that will act as an option item:*/
+          c = document.createElement("DIV");
+          c.innerHTML = selElmnt.options[j].innerHTML;
+          c.addEventListener("click", function(e) {
+              /*when an item is clicked, update the original select box,
+              and the selected item:*/
+              var y, i, k, s, h, sl, yl;
+              s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+              sl = s.length;
+              h = this.parentNode.previousSibling;
+              for (i = 0; i < sl; i++) {
+                if (s.options[i].innerHTML == this.innerHTML) {
+                  s.selectedIndex = i;
+                  h.innerHTML = this.innerHTML;
+                  y = this.parentNode.getElementsByClassName("same-as-selected");
+                  yl = y.length;
+                  for (k = 0; k < yl; k++) {
+                    y[k].removeAttribute("class");
+                  }
+                  this.setAttribute("class", "same-as-selected");
+                  break;
+                }
+              }
+              h.click();
+          });
+          b.appendChild(c);
+        }
+        x[i].appendChild(b);
+        a.addEventListener("click", function(e) {
+            /*when the select box is clicked, close any other select boxes,
+            and open/close the current select box:*/
+            e.stopPropagation();
+            closeAllSelect(this);
+            this.nextSibling.classList.toggle("select-hide");
+            this.classList.toggle("select-arrow-active");
+          });
+      }
+      function closeAllSelect(elmnt) {
+        /*a function that will close all select boxes in the document,
+        except the current select box:*/
+        var x, y, i, xl, yl, arrNo = [];
+        x = document.getElementsByClassName("select-items");
+        y = document.getElementsByClassName("select-selected");
+        xl = x.length;
+        yl = y.length;
+        for (i = 0; i < yl; i++) {
+          if (elmnt == y[i]) {
+            arrNo.push(i)
+          } else {
+            y[i].classList.remove("select-arrow-active");
+          }
+        }
+        for (i = 0; i < xl; i++) {
+          if (arrNo.indexOf(i)) {
+            x[i].classList.add("select-hide");
+          }
+        }
+      }
+      /*if the user clicks anywhere outside the select box,
+      then close all select boxes:*/
+      document.addEventListener("click", closeAllSelect);
+      </script>
+
+
+</body>
+</html>

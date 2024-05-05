@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="language" content="hu">
+    <meta name="keywords" content="fizika,Domokos Péter,Ábrahám Péter, Balásházy Imre, fizikus,kutatási eredmények, konferencia, kutatók">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="sidebarSmall.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="profileCards.css">
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="profileCardsSmall.css">
+    <link rel="stylesheet" href="atom.css">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="calendarSmall.css">
+    <link rel="stylesheet" href="timer.css">
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://kit.fontawesome.com/fe1e0603b5.js' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/fe1e0603b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;1,400&family=Gruppo&family=Inconsolata:wght@300&family=Michroma&family=Poiret+One&family=Sen&family=Space+Mono&family=Titillium+Web:wght@200;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;1,400&family=Gruppo&family=Inconsolata:wght@300&family=Michroma&family=Nunito+Sans:wght@200;400;900&family=Poiret+One&family=Sen&family=Space+Mono&family=Titillium+Web:wght@200;700&display=swap');
+    </style>
+    <script src="sv-countdown.js"></script>
+    <script src="sv-countdown.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="btn-hmb">
+        <i class='bx bx-menu' id="hmb"></i>
+    </div>
+
+    <script>
+        function checkMediaQuery() {
+            if (window.matchMedia("(min-width: 850px)").matches) {
+                document.querySelector(".btn-hmb").style.display = "none";
+            } else {
+                document.querySelector(".btn-hmb").style.display = "block";
+            }
+            }
+            window.addEventListener("resize", checkMediaQuery);
+            checkMediaQuery();
+    </script>
+
+        <!-- FO OLDAL -->
+    <div class="home_content">
+        <div class="top_bar">
+                <div class="contact_info"> 
+                    <span class="phone_number" onclick="location.href='#about-us'">
+                        <i id="phone_icon" class="fa-solid fa-phone"></i>
+                        +40753067268
+                    </span>
+                    <span class="phone_number" onclick="location.href='#about-us'">
+                        <i class="fa-regular fa-envelope"></i>
+                        fizika.konferencia@gmail.com
+                    </span>
+                    
+
+                </div>
+        </div>
+        <div class="space"></div>
+        <div class="grid-container">
+            <div class="grid-item-center">Fizikusok országos évértékelő tudományos konfereciája</div>
+            
+            <div class="grid-item">
+                <div id="countdown"></div>
+	            <script src="/path/to/sv-countdown.js"></script>
+	            <script>
+	            var countdown = new SV.Countdown('#countdown', {
+	             	year: 2023,
+	            	month: 11,
+	            	day: 23,
+		            untilMessage: 'Esemény kezdete: 2023.11.23',
+		            endMessage: 'Elkezdődött'
+	                });
+	            </script>
+            </div>
+
+            <div class="grid-item-last" id="jel-sv">
+                <div class="button_actual">
+                    <a href="form.html" id="btn_actual">
+                        Jelentkezz most!
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div><!-- FO OLDAL VEGE -->
+
+    <div id="eloadok">
+        <div class="pres-title-ct">
+            <div class="pres-title">
+            -Kiemelt előadóink-
+            </div>
+            <div class="pres-text-ct">
+                Mint mindig, az évértékelő Fizika Konferenciára azokat a tudósokat és szakembereket hívjuk, akik a <b>legfrissebb kutatásokkal és innovációkkal</b> járultak hozzá a fizikai tudomány fejlődéséhez.
+            </div>
+        </div>
+
+
+        <div class="cards">
+            <!-- DOMOKOS PETER -->
+            <div class="card-wrapper">
+                  <div class="front">
+                    <div class="pic-title">
+                        <div class="pic">
+                            <img src="Domokos_Peter.jpg" alt="">
+                          </div>
+                          <div class="sc-name">
+                          <h3 class="name">Domokos Péter</h3>
+                          <p class="position">Atomfizikus</p>
+                        </div>
+                    </div>
+                    <p class="introduce">Szakterülete többek között az alábbi témakörökre terjed ki: atomok és molekulák lézeres hűtése és csapdázása, kvantumelekrodinamika rezonátorban, kvantumgázok, optikai mikrostruktúrák.</p>
+                   <div> 
+                    <button id="btn-domokos" onclick="flipPresCard()" class="btn-presentations">Előadásai</button>
+                   <div class="social">
+                      <ul>
+                        <li><i class='bx bxl-facebook-circle'></i></li>
+                        <li><i onclick="https://hu.wikipedia.org/wiki/Domokos_P%C3%A9ter_(fizikus)" class='bx bxl-wikipedia' ></i></li>
+                        <li><i class='bx bxl-google' ></i></li>
+                      </ul>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="card-text">
+                        <h1>Domokos Péter</h1>
+                        <h2>Előadásai:</h2>
+                        <ul>
+                            <li class="li-date">November 23 18:00</li>
+                            <li class="li-title">Kvantumgázok és Bose-Einstein kondenzátum</li>
+                            <li class="li-date">November 24 16:00</li>
+                            <li class="li-title">Kvantummechanika alapjai és alkalmazások</li>
+                            <li class="li-date">November 25 16:00</li>
+                            <li class="li-title">Kvantumoptika és kvantuminformáció</li>
+                            <li class="li-date">November 26 12:00</li>
+                            <li class="li-title">Lézerfizika és optikai csapdázás</li>
+                        </ul>
+                    </div>
+                     <button id="btn-domokos" onclick="flipPresCard()" class="btn-presentations">
+                        Domokos Péterről
+                     </button>
+                  </div>
+                  <script>
+                    function flipPresCard() {
+                        var card = document.querySelector('.card-wrapper');
+                        card.classList.toggle('flipped');
+                    }
+                </script>
+            </div>
+            <!-- Balásházy Imre -->
+            <div class="card-wrapper-2">
+                <div class="front-2">
+                    <div class="pic-title">
+                        <div class="pic">
+                            <img src="imre.jpg" alt="">
+                        </div>
+                        <div class="sc-name">
+                        <h3 class="name">Balásházy Imre</h3>
+                        <p class="position">Biofizikus</p>
+                        </div>
+                    </div>
+                        <p class="introduce">Atomenergia-kutató Intézet Környezetfizikai Laboratórium kutatója valamint a Magyar Tudományos Akadémia Energiatudományi Kutatóközpont tudományos tanácsadója.</p>
+                        
+                        <div>
+                        <button id="btn-imre" onclick="flipPresCard2()" class="btn-presentations">
+                            Előadásai
+                        </button>
+                        <div class="social">
+                            <ul>
+                                <li><i class='bx bxl-facebook-circle'></i></li>
+                                <li><i class='bx bxl-wikipedia' ></i></li>
+                                <li><i class='bx bxl-google' ></i></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="back-2">
+                      <div class="card-text">
+                          <h1>Balásházy Imre</h1>
+                          <h2>Előadásai:</h2>
+                          <ul>
+                              <li class="li-date">November 23 16:00</li>
+                              <li class="li-title">Sejtek elektromos tulajdonságai és membránpotenciál</li>
+                              <li class="li-date">November 24 18:00</li>
+                              <li class="li-title">Biológiai rendszerekben lévő folyadékok áramlása és fluidizálódás</li>
+                              <li class="li-date">November 25 14:00</li>
+                              <li class="li-title">Izommozgás és mechanikai terhelés biológiai rendszerekben</li>
+                              <li class="li-date">November 26 16:00</li>
+                              <li class="li-title">Optikai módszerek alkalmazása a sejt- és molekuláris képalkotásban</li>
+                          </ul>
+                      </div>
+                       <button id="btn-imre" onclick="flipPresCard2()" class="btn-presentations">
+                        Balásházy Imréről
+                       </button>
+                    </div>
+                    <script>
+                      function flipPresCard2() {
+                          var card = document.querySelector('.card-wrapper-2');
+                          card.classList.toggle('flipped');
+                      }
+                  </script>
+            </div>
+            <!-- Ábrahám Péter -->
+            <div class="card-wrapper-3">
+                <div class="front-3">
+                    <div class="pic-title">
+                        <div class="pic">
+                            <img src="abraham.jpg" alt="">
+                        </div>
+                        <div class="sc-name">
+                            <h3 class="name">Ábrahám Péter</h3>
+                            <p class="position">Csillagász</p>
+                        </div>
+                    </div>
+                    <p class="introduce">Az Eötvös Loránd Tudományegyetemen (ELTE) tanít többek közt: szilárdtestfizika, statisztikus fizikát, mezoszkopikus rendszereket, valamint mezoszkopikus és szupravezető rendszerek hibridjeit.</p>
+                    <div>
+                    <button id="btn-abraham" onclick="flipPresCard3()" class="btn-presentations">
+                        Ábrahám Péter
+                     </button>
+                     <div class="social">
+                        <ul>
+                            <li><i class='bx bxl-facebook-circle'></i></li>
+                            <li><i class='bx bxl-wikipedia' ></i></li>
+                            <li><i class='bx bxl-google' ></i></li>
+                        </ul>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="back-3">
+                    <div class="card-text">
+                        <h1>Ábrahám Péter</h1>
+                        <h2>Előadásai:</h2>
+                        <ul>
+                            <li class="li-date">November 23 14:00</li>
+                            <li class="li-title">A csillagok élete és fejlődése</li>
+                            <li class="li-date">November 24 14:00</li>
+                            <li class="li-title">A gravitációs hullámok felfedezése és jelentősége</li>
+                            <li class="li-date">November 25 18:00</li>
+                            <li class="li-title">A fekete lyukak és az eseményhorizont</li>
+                            <li class="li-date">November 26 18:00</li>
+                            <li class="li-title">Galaxisok és az univerzum nagy skálájú szerkezete</li>
+                        </ul>
+                    </div>
+                     <button id="btn-abraham" onclick="flipPresCard3()" class="btn-presentations">
+                        Ábrahám Péterről
+                     </button>
+                  </div>
+                  <script>
+                    function flipPresCard3() {
+                        var card = document.querySelector('.card-wrapper-3');
+                        card.classList.toggle('flipped');
+                    }
+                </script>
+
+
+                <!-- <div class="card-header">
+                    <div class="pic">
+                        <img src="abraham.jpg" alt="">
+                    </div>
+                    <h3 class="name">Ábrahám Péter</h3>
+                    <p class="position">Csillagász</p>
+                    <p class="introduce">Az Eötvös Loránd Tudományegyetemen (ELTE) tanít többek közt: szilárdtestfizika, statisztikus fizikát, mezoszkopikus rendszereket, valamint mezoszkopikus és szupravezető rendszerek hibridjeit.</p>
+                    <a href="#" class="btn-presentations">Előadásai</a>
+                    <div class="social">
+                        <ul>
+                            <li><i class='bx bxl-facebook-circle'></i></li>
+                            <li><i class='bx bxl-wikipedia' ></i></li>
+                            <li><i class='bx bxl-google' ></i></li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+            <div class="card-wrapper-4">
+                  <div class="front-4">
+                    <div class="pic-title">
+                        <div class="pic">
+                        <img src="weiss.jpg" alt="">
+                        </div>
+                        <div class="sc-name">
+                            <h3 class="name">Rainer Weiss</h3>
+                        <p class="position">Asztrofizikus</p>
+                        </div>
+                        
+                    </div>
+                    <p class="introduce">
+                        A gravitációs hullámok felfedezéséért Nobel-díjjal kitüntetett kutató, valamint 
+                        az ELTE Szenátusa 2018. november 9-én adományozott doctor et professor honoris causa címet.
+                    </p>
+                    <div>
+                        <button id="btn-weiss" onclick="flipPresCard4()" class="btn-presentations">Előadásai</button>
+                            <div class="social">
+                            <ul>
+                                <li><i class='bx bxl-facebook-circle'></i></li>
+                                <li><i class='bx bxl-wikipedia' ></i></li>
+                                <li><i class='bx bxl-google' ></i></li>
+                            </ul>
+                            </div>
+                    </div>
+                  </div>
+                  <div class="back-4">
+                    <div class="card-text">
+                        <h1>Rainer Weiss</h1>
+                        <h2>Előadásai:</h2>
+                        <ul>
+                            <li class="li-date">November 23 12:00</li>
+                            <li class="li-title">Gravitációs hullámok és az asztrofizika</li>
+                            <li class="li-date">November 24 12:00</li>
+                            <li class="li-title">Csillagok kollapszusa és fekete lyukak</li>
+                            <li class="li-date">November 25 12:00</li>
+                            <li class="li-title">Galaxisok központi fekete lyukai és az aktív galaktikus magok</li>
+                        </ul>
+                    </div>
+                     <button id="btn-domokos" onclick="flipPresCard4()" class="btn-presentations">
+                        Domokos Péterről
+                     </button>
+                  </div>
+                  <script>
+                    function flipPresCard4() {
+                        var card = document.querySelector('.card-wrapper-4');
+                        card.classList.toggle('flipped');
+                    }
+                </script>
+            </div>
+
+        </div>
+    </div><!-- ELOADOK VEGE -->
+
+    
+    <div id="calendar-section">
+        <div class="cl-title">
+            Naptár
+        </div>
+        <div class="cl-wrapper" id="calendar">
+
+            <div class="cl-outer" >
+                <div class="cl-info">
+                    <div class="cl-icon">
+                        <img src="calendar.png" alt="cl-icon">
+                    </div>
+                    <div class="cl-info-ct">
+                        <div class="cl-left">
+                            2023
+                            November
+                        </div>
+                        <div class="cl-right">
+                            Kattints a naptár kijelölt napjaira további információkért
+                        </div>
+                    </div>
+                </div>
+                <div class="cl-container">
+                    <div class="box-day">Hétfő</div>
+                    <div class="box-day">Kedd</div>
+                    <div class="box-day">Szerda</div>
+                    <div class="box-day">Csütörtök</div>
+                    <div class="box-day">Péntek</div>
+                    <div class="box-day">Szombat</div>
+                    <div class="box-day">Vasárnap</div>
+                    <div class="box" style="background-color: #5958588e;">
+                        <div class="box-num">
+                            30
+                        </div>
+                        <div class="day-event">
+                            
+                        </div>
+                    </div>
+                    <div class="box" style="background-color: #5958588e;">31</div>
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                    <div class="box">4</div>
+                    <div class="box">5</div>
+                    <div class="box">6</div>
+                    <div class="box">7</div>
+                    <div class="box">8</div>
+                    <div class="box">9</div>
+                    <div class="box">10</div>
+                    <div class="box">11</div>
+                    <div class="box" onclick="resize12()" style="background-color:#fb4f589a ;">
+                        <div class="box-num">
+                            12
+                        </div>
+                        <div class="day-event">
+                            <b>Jelentkezési határidő</b>
+                        </div>
+                        <script type="text/javascript">
+                            function resize12() {
+                            var scCl= document.getElementById("calendar");
+                            scCl.classList.toggle('active');
+                            var d12= document.getElementById("d12");
+                            d12.classList.toggle('active');
+                            }
+                        </script>
+                    </div>
+                    
+                    <div class="box">13</div>
+                    <div class="box">14</div>
+                    <div class="box">15</div>
+                    <div class="box">16</div>
+                    <div class="box" onclick="pop17()" style="background-color: #49beb5d5;">
+                        <div class="box-num">
+                            17
+                        </div>
+                        <div class="day-event">
+                            <b>Végleges program kifüggesztése</b>
+                        </div>
+                        <script type="text/javascript">
+                            function pop17() {
+                            var scCl= document.getElementById("calendar");
+                            scCl.classList.toggle('active');
+                            var d17= document.getElementById("d17");
+                            d17.classList.toggle('active');
+                            }
+                        </script>
+                    </div>
+                    <div class="box">18</div>
+                    <div class="box">19</div>
+                    <div class="box">20</div>
+                    <div class="box">21</div>
+                    <div class="box">22</div>
+                    <div class="box" onclick="pop23()" style="background-color: #ffc25196;">
+                        <div class="box-num">
+                            23
+                        </div>
+                        <div class="day-event">
+                            <b>Megnyitó</b>
+                        </div>
+                        <script type="text/javascript">
+                            function pop23() {
+                            var scCl= document.getElementById("calendar");
+                            scCl.classList.toggle('active');
+                            var d23= document.getElementById("d23");
+                            d23.classList.toggle('active');
+                            }
+                        </script>
+                    </div>
+                    <div class="box" onclick="pop24()" style="background-color: #ffc25196;">
+                        <div class="box-num">
+                            24
+                        </div>
+                        <div class="day-event">
+                            <b>Első nap</b>
+                        </div>
+                        <script type="text/javascript">
+                            function pop24() {
+                            var scCl= document.getElementById("calendar");
+                            scCl.classList.toggle('active');
+                            var d24= document.getElementById("d24");
+                            d24.classList.toggle('active');
+                            }
+                        </script>
+                    </div>
+                    <div class="box" onclick="pop25()" style="background-color: #ffc25196;">
+                        <div class="box-num">
+                            25
+                        </div>
+                        <div class="day-event">
+                            <b>Második nap</b>
+                        </div>
+                        <script type="text/javascript">
+                            function pop25() {
+                            var scCl= document.getElementById("calendar");
+                            scCl.classList.toggle('active');
+                            var d25= document.getElementById("d25");
+                            d25.classList.toggle('active');
+                            }
+                        </script>
+                    </div>
+                    <div class="box" onclick="pop26()" style="background-color: #ffc25196;">
+                        <div class="box-num">
+                            25
+                        </div>
+                        <div class="day-event">
+                            <b>Záró nap</b>
+                        </div>
+                        <script type="text/javascript">
+                            function pop26() {
+                            var scCl= document.getElementById("calendar");
+                            scCl.classList.toggle('active');
+                            var d26= document.getElementById("d26");
+                            d26.classList.toggle('active');
+                            }
+                        </script>
+                    </div>
+                    <div class="box">27</div>
+                    <div class="box">28</div>
+                    <div class="box">29</div>
+                    <div class="box">30</div>
+                    <div class="box" style="background-color: #5958588e;">1</div>
+                    <div class="box" style="background-color: #5958588e;">2</div>
+                    <div class="box" style="background-color: #5958588e;">3</div>
+                </div>
+            </div>
+        </div>
+        <!-- POPUP NAPOK -->
+        <div class="popup" id="d12">
+            <div class="p-header">
+                <h1>November 12</h1>
+                <p>
+                    A jelentkezéseket, 2023 November 12.-e 23 óra 59 percig fogadjuk el. 
+                </p>
+                <div class="p-jel" onclick="location.href='form.html'">
+                    Jelentkezz most!
+                </div>
+            </div>
+            <div class="p-footer" onclick="resize12()">
+                Bezár
+            </div>
+        </div>
+        <div class="popup" id="d17">
+            <div class="p-header">
+                <h1>November 17</h1>
+                <p>
+                    A végleges program publikálása 2023 November 17.-én történik.
+                    Kövesd az oldalt hogy ne maradj le a programról.  
+                </p>
+            
+            </div>
+            <div class="p-footer" onclick="pop17()">
+                Bezár
+            </div>
+        </div>
+        <div class="popup" id="d23">
+            <div class="p-header">
+                <h1>November 23</h1>
+                <ul>
+                    <li class="li-date">11:00 Nyitó ünnepély</li>
+                    <li class="li-date">12:00 Rainer Weiss:</li>
+                    <li class="li-title">Gravitációs hullámok és az asztrofizika</li>
+                    <li class="li-date">14:00 Ábrahám Péter:</li>
+                    <li class="li-title">A csillagok élete és fejlődése</li>
+                    <li class="li-date">16:00 Balásházy Imre</li>
+                    <li class="li-title">Sejtek elektromos tulajdonságai és membránpotenciál</li>
+                    <li class="li-date">18:00 Domokos Péter</li>
+                    <li class="li-title">Kvantumgázok és Bose-Einstein kondenzátum</li>
+                </ul>
+            
+            </div>
+            <div class="p-footer" onclick="pop23()">
+                Bezár
+            </div>
+            <p>
+                A végleges program kifüggesztésével bővül az előadások száma.
+            </p>
+        </div>
+        <div class="popup" id="d24">
+            <div class="p-header">
+                <h1>November 24</h1>
+                <ul>
+                    <li class="li-date">12:00 - Rainer Weiss:</li>
+                    <li class="li-title">Csillagok kollapszusa és fekete lyukak</li>
+                    <li class="li-date">14:00 - Ábrahám Péter:</li>
+                    <li class="li-title">A gravitációs hullámok felfedezése és jelentősége</li>
+                    <li class="li-date">16:00 - Domokos Péter:</li>
+                    <li class="li-title">Kvantummechanika alapjai és alkalmazások</li>
+                    <li class="li-date">18:00 - Balásházy Imre:</li>
+                    <li class="li-title">Biológiai rendszerekben lévő folyadékok áramlása és fluidizálódás</li>
+                </ul>
+            </div>
+            <div class="p-footer" onclick="pop24()">
+                Bezár
+            </div>
+            <p>
+                A végleges program kifüggesztésével bővül az előadások száma.
+            </p>
+        </div>
+        <div class="popup" id="d25">
+            <div class="p-header">
+                <h1>November 25</h1>
+                <ul>
+                    <li class="li-date">12:00 - Rainer Weiss:</li>
+                    <li class="li-title">Galaxisok központi fekete lyukai és az aktív galaktikus magok</li>
+                    <li class="li-date">14:00 - Balásházy Imre:</li>
+                    <li class="li-title">Izommozgás és mechanikai terhelés biológiai rendszerekben</li>
+                    <li class="li-date">16:00 - Domokos Péter:</li>
+                    <li class="li-title">Kvantumoptika és kvantuminformáció</li>
+                    <li class="li-date">18:00 - Ábrahám Péter:</li>
+                    <li class="li-title">A fekete lyukak és az eseményhorizont</li>
+                </ul>
+            </div>
+            <div class="p-footer" onclick="pop25()">
+                Bezár
+            </div>
+            <p>
+                A végleges program kifüggesztésével bővül az előadások száma.
+            </p>
+        </div>
+        <div class="popup" id="d26">
+            <div class="p-header">
+                <h1>November 26</h1>
+                <ul>
+                    <li class="li-date">12:00 - Domokos Péter:</li>
+                    <li class="li-title">Lézerfizika és optikai csapdázás</li>
+                    <li class="li-date">14:00 - Balásházy Imre:</li>
+                    <li class="li-title">Optikai módszerek alkalmazása a sejt- és molekuláris képalkotásban</li>
+                    <li class="li-date">16:00 - Ábrahám Péter:</li>
+                    <li class="li-title">Galaxisok és az univerzum nagy skálájú szerkezete</li>
+                    <li class="li-date">19:00 - Russzó Tibi koncert</li>
+                </ul>
+            </div>
+            <div class="p-footer" onclick="pop26()">
+                Bezár
+            </div>
+            <p>
+                A végleges program kifüggesztésével bővül az előadások száma.
+            </p>
+        </div>
+    </div><!-- CALENDAR VEGE -->
+
+    <div class="map-sc" id="mapp">
+        <div class="cl-title">
+            Térkép
+        </div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10931.627105126992!2d23.593823204176974!3d46.76673397399398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c262f3726c3%3A0xf81e049e69dfa995!2sBabe%C5%9F-Bolyai%20Tudom%C3%A1nyegyetem!5e0!3m2!1shu!2sro!4v1685385568507!5m2!1shu!2sro" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="about" id="about-us">
+        <div class="left-side">
+            <div class="left-title">
+                Rólunk, a konfereciáról:
+            </div>
+            <div class="left-text">
+                Az Önök részvételével évente megrendezett konferenciák célja, hogy összehozza a fizika iránt érdeklődő tudósokat, kutatókat és szakembereket, és lehetőséget biztosítson a tapasztalatcserére és az új eredmények bemutatására.
+                Célunk, hogy elősegítsük a fizikai kutatások fejlődését és előremozdítsuk az innováció terén elért eredményeket. Konferenciáink széles témaválasztékkal rendelkeznek, amelyek lefedik a klasszikus és modern fizika területeit, beleértve a kvantumfizikát, a részecskefizikát, az asztrofizikát és sok más izgalmas területet.
+            </div>
+            <div class="spons">
+                Támogatónk:
+                <img src="bosch.jpg" alt="">
+            </div>
+        </div>
+        <div class="right-side">
+            <p class="right-title">Vedd fel velün a kapcsolatot!</p>
+            <form>      
+                <input name="name" type="text" class="feedback-input" placeholder="Név" />   
+                <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                <textarea name="text" class="feedback-input" placeholder="Üzenet"></textarea>
+                <input type="submit" value="Küldés"/>
+              </form>
+        </div>
+    </div>
+
+    <div class="leftSidebar">
+        <div class="logo_content">
+            <div class="logo"> 
+                <i class="fa-solid fa-circle-radiation"></i>
+                <span class="material-symbols-outlined"></span>
+                <div class="logo_name">Konferencia</div>
+            </div>
+            <i class='bx bx-menu' id="button_menu"></i>
+
+
+            <div class="menuBar">
+                <ul class="navigation_list">
+                    <li>
+                        <i class='bx bx-search' ></i>
+                        <input type="text" placeholder="Keresés">
+                        <span class="tooltip">Keresés</span> 
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <i class='bx bx-home-alt-2'></i>
+                            <span class="link_1">Főoldal</span>
+                        </a>
+                        <span class="tooltip">Főoldal</span>
+                    </li>
+                    <li>
+                        <a href="#eloadok">
+                            <i class='bx bx-slideshow'></i>
+                            <span class="link_1">Előadók</span>
+                        </a>
+                        <span class="tooltip">Előadók</span>
+                    </li>
+                    <li>
+                        <a href="#calendar-section">
+                            <i class='bx bx-calendar' ></i>
+                            <span class="link_1">Naptár</span>
+                        </a>
+                        <span class="tooltip">Naptár</span>
+                    </li>
+                    <li>
+                        <a href="#mapp">
+                            <i class='bx bx-map'></i>
+                            <span class="link_1">Térkép</span>
+                        </a>
+                        <span class="tooltip">Térkép</span>
+                    </li>
+                    <li>
+                        <a href="form.html">
+                            <i class="fa-solid fa-person-circle-plus"></i>
+                            <span class="link_1">Jelentkezés</span>
+                        </a>
+                        <span class="tooltip">Jelentkezés</span>
+                    </li>
+                    <li>
+                        <a href="#about-us">
+                            <i class='bx bx-info-circle' ></i>
+                            <span class="link_1">Rólunk</span>
+                        </a>
+                        <span class="tooltip">Rólunk</span>
+                    </li>
+
+                </ul>
+            </div>
+         </div>
+    </div>
+
+    <script>
+        let button = document.querySelector("#button_menu");
+        let sidebar = document.querySelector(".leftSidebar");
+        let search_buttton = document.querySelector(".bx-search");
+        let hmb = document.querySelector("#hmb");
+        let hmbc = document.querySelector(".btn-hmb");
+
+        button.onclick= function(){
+            // Aktivalja a menut
+            sidebar.classList.toggle("active");
+            hmbc.style.opacity="1";
+        }
+
+        search_buttton.onclick= function(){
+            // Aktivalja a menut
+            sidebar.classList.toggle("active");
+        }
+        hmb.onclick= function(){
+            // Aktivalja a menut
+            sidebar.classList.toggle("active");
+            hmbc.style.opacity="0";
+        }
+
+
+        const emailInput = document.querySelector('input[name="email"]');
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+emailInput.addEventListener('blur', function() {
+  const email = this.value.trim();
+  
+  if (emailRegex.test(email)) {
+    // Érvényes e-mail cím
+    this.classList.remove('invalid');
+    this.classList.add('valid');
+  } else {
+    // Érvénytelen e-mail cím
+    this.classList.remove('valid');
+    this.classList.add('invalid');
+    alert('Érvénytelen e-mail cím!');
+  }
+});
+    </script>
+</body>
+</html>

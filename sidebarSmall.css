@@ -1,0 +1,43 @@
+@media (max-width: 850px){
+    .leftSidebar{
+        left: -72px;
+    }
+    .leftSidebar.active {
+        width: 250px;
+        margin-left: 72px;
+    }
+    .contact_info{
+        align-items: end;
+        justify-content: right;
+        float:right;
+    }
+    .home_content .top_bar .contact_info .phone_icon{
+        color:rgb(49, 112, 124);
+        float: right;
+    }
+    
+    .home_content .top_bar .contact_info .phone_number{
+        transition: all 0.2s ease;
+        opacity: 1;
+        color: #316F7B;
+        border-left: 1px solid #316F7B;
+        padding-right: 6px;
+        padding-left: 6px;
+        width: fit-content;
+        float: right;
+     }
+
+     .btn-hmb{
+        padding: 0;
+        display: block;
+        float:left;
+        font-size: xxx-large;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1;
+        color: #ffffff;
+        mix-blend-mode: difference;
+    }
+    
+}

@@ -1,0 +1,48 @@
+@media (max-width: 850px){
+    .day-event{
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .cl-right{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .box-day{
+        font-size: small;
+        padding: 2px;
+    }
+
+    .cl-left{
+        float: left;
+        padding-left: 10px;
+        font-size:medium;
+    }
+
+    .popup{
+        width: 300px;
+    
+        position: absolute;
+        top: 0;
+        right: -25%;
+        box-shadow: 0 5px 30px rgba( 0, 0, 0, 0.3);
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        transition:  0.5s ease;
+        border-radius: 15px;
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 20px;
+        padding-bottom: 10px;
+    }  
+    
+    .popup.active{
+        top: 50%;
+        transition:  0.5s ease;
+        visibility: visible;
+        opacity: 1;
+    }
+}
